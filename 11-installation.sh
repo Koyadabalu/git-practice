@@ -36,7 +36,7 @@ if [ $? -ne 0 ]
           echo "mysql is not success ... check it"
           exit 1
       else
-          echo "git installation is success"
+          echo -e "mysql installation is $G success $N"
       fi
 else  
     echo "mysql is already installed, nothing to do"
