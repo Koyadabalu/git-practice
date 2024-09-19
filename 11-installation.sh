@@ -2,6 +2,7 @@
 
 USERID=$(id -u)
 G="\e[32m"
+N="\e[0m"
 
 if [ $USERID -ne 0 ]
 then 
@@ -23,7 +24,7 @@ if [ $? -ne 0 ]
       fi
  
 else
-    echo -e  "$2 git is $R already installed, nothing to do $N"
+    echo -e  " git is $R already installed, nothing to do $N"
 
 fi
 
@@ -37,9 +38,9 @@ if [ $? -ne 0 ]
           echo "mysql is not success ... check it"
           exit 1
       else
-          echo -e "$2 mysql installation is $G success $N"
+          echo -e "mysql installation is $G success $N"
       fi
 else  
-    echo -e "$2 mysql is already installed, $G nothing to do $N"
+    echo -e "mysql is already installed, $G nothing to do $N"
 
 fi
