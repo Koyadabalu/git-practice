@@ -23,7 +23,7 @@ if [ $? -ne 0 ]
       fi
  
 else
-    echo -e  "git is $R already installed, nothing to do $N"
+    echo -e  "$2 git is $R already installed, nothing to do $N"
 
 fi
 
@@ -37,9 +37,9 @@ if [ $? -ne 0 ]
           echo "mysql is not success ... check it"
           exit 1
       else
-          echo -e "mysql installation is $G success $N"
+          echo -e "$2 mysql installation is $G success $N"
       fi
 else  
-    echo "mysql is already installed, nothing to do"
+    echo -e "$2 mysql is already installed, $G nothing to do $N"
 
 fi
