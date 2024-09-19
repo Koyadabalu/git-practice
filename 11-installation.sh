@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
+G="\e[32m"
 
 if [ $USERID -ne 0 ]
 then 
@@ -22,7 +23,7 @@ if [ $? -ne 0 ]
       fi
  
 else
-    echo "git is already installed, nothing to do"
+    echo -e  "git is $R already installed, nothing to do $N"
 
 fi
 
