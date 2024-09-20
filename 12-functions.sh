@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 CHECK_ROOT(){
-    if [ $USERID -ne 0]
+    if [ $USERID -ne 0 ]
     then 
        echo "please run this script with root permission"
     exit 1
@@ -11,7 +11,7 @@ CHECK_ROOT(){
 }
 
 VALIDATE(){
-    if [$1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo "$2 is ...failed"
         exit 1
@@ -24,7 +24,7 @@ VALIDATE(){
 CHECK_ROOT
 
 dnf list installed git 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "git is not installed, goint to install"
     dnf install git -y
@@ -34,7 +34,7 @@ else
 fi
 
 dnf list installed mysql
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "mysql is not insatlled, going to install"
     dnf install mysql -y
