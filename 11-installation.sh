@@ -24,7 +24,7 @@ if [ $? -ne 0 ]
       fi
  
 else
-    echo -e  " git is $R already installed, nothing to do $N"
+    echo -e  " git is  already installed, $G nothing to do $N"
 
 fi
 
